@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Truckloads of Food</title>
+		<!--
+		  	 _______              _    _                 _              __   ______              _ 
+ 			|__   __|            | |  | |               | |            / _| |  ____|            | |
+    		   | |_ __ _   _  ___| | _| | ___   __ _  __| |___    ___ | |_  | |__ ___   ___   __| |
+    		   | | '__| | | |/ __| |/ / |/ _ \ / _` |/ _` / __|  / _ \|  _| |  __/ _ \ / _ \ / _` |
+    		   | | |  | |_| | (__|   <| | (_) | (_| | (_| \__ \ | (_) | |   | | | (_) | (_) | (_| |
+    		   |_|_|   \__,_|\___|_|\_\_|\___/ \__,_|\__,_|___/  \___/|_|   |_|  \___/ \___/ \__,_|
+                                                                                                                                                                        
+		-->
+		<link href="js/lib/tabulator/dist/css/tabulator.min.css" rel="stylesheet">
+		<link href="css/index.css" rel="stylesheet">
+		<script type="text/javascript" src="js/lib/jquery-3.6.0.min.js"></script>
+		<script type="text/javascript" src="js/lib/jquery.csv.min.js"></script>
+		<script type="text/javascript" src="js/lib/tabulator/dist/js/tabulator.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+	</head>
+	<body>
+		<div id="main_container">
+			<h1 id="title">Truckloads of Food</h1>
+			<div id="instructions">
+				<span></span>
+			</div>
+			<div class="form_entry">
+				<label for="lat">Latitude:</label>
+				<input type="number" id="lat" name="lat" required size="10"> 
+			</div>
+			<div class="form_entry">
+				<label for="lon">Longitude:</label>
+				<input type="number" id="lon" name="lon" required size="10"> 
+			</div>
+			<div class="form_entry">
+				<label for="truck_count">Number of Options:</label>
+				<input type="number" id="truck_count" name="truck_count" required value="5" size="10">
+			</div>
+			<div class="form_entry">
+				<input id="submit" type="button" value="Get Truckloads of Food">
+			</div>
+			<div id="output_table"></div>
+		</div>
+	</body>
